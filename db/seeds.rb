@@ -10,9 +10,9 @@ Instructor.reset_pk_sequence
 User.destroy_all
 User.reset_pk_sequence
 
-User.create!(name: "Adrienne", username: "apaquin", password_digest: "password")
-User.create!(name: "Jeanne", username: "jeannemarie", password_digest: "password")
-User.create!(name: "Paul", username: "papapaul", password_digest: "password")
+User.create!(name: "Adrienne", username: "apaquin", password: "password")
+User.create!(name: "Jeanne", username: "jeannemarie", password: "password")
+User.create!(name: "Paul", username: "papapaul", password: "password")
 
 puts "created #{User.count} users"
 

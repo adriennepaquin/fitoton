@@ -9,7 +9,7 @@ function PageContent() {
 
     return (
         <div>
-            <NavBar/>
+            <NavBar user={user} setUser={setUser}/>
             <MainContent user={user} setUser={setUser}/>
             Page Content
             <Footer/>

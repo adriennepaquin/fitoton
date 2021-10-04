@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :authenticate, only: [:me, :index]
+    before_action :authenticate, only: [:me]
 
     # POST /login
     def login

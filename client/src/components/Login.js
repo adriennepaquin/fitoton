@@ -21,6 +21,7 @@ function Login({ setUser }) {
             username,
             password
         }
+        console.log(user)
         fetch(`http://localhost:3000/login`, {
             method: 'POST',
             headers: {
