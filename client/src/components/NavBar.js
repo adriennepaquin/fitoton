@@ -17,7 +17,9 @@ function NavBar( user, setUser ) {
             <Container>
                 <Nav className="justify-content-start">
                     <Navbar.Brand>
-                        
+                        <div>
+                            Fit-O-Ton
+                        </div>
                     </Navbar.Brand>
                     <Nav>
                         <Nav.Item>

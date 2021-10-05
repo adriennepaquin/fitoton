@@ -32,20 +32,27 @@ function Login({ setUser }) {
         .then((res) => {
             return res.json().then((data) => {
                 if (res.ok) {
+                    console.log("ok")
                     return data
                 } else {
+                    console.log("not ok")
                     throw data
                 }
             })
         })
         .then((data) => {
+            console.log(data)
             const { user, token } = data
+            console.log("1")
             localStorage.setItem("token", token)
+            console.log("2")
             setUser({
                 id: data.user.id,
                 name: data.user.name,
                 username: data.user.username
             })
+            console.log(data)
+            console.log("logged in")
             history.push('/welcome')
         })
         .catch((error) => {

@@ -3,6 +3,7 @@ import Home from './Home'
 import Signup from './Signup'
 import Login from './Login'
 import NotFound from './NotFound'
+import Welcome from './Welcome'
 
 function MainContent(user, setUser) {
     return (
@@ -17,6 +18,9 @@ function MainContent(user, setUser) {
                 </Route>
                 <Route exact path="/login">
                     <Login setUser={setUser}/>
+                </Route>
+                <Route exact path="/welcome">
+                    {user ? <Welcome/> : <Redirect to="/"/>}
                 </Route>
                 <Route path="*" component={NotFound}/>
             </Switch>
