@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
     padding: 15px;
     height: 100px;
-    background-color: white;
+    background-color: black;
     border-bottom: 10px solid black;
   }
 

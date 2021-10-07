@@ -5,13 +5,14 @@ import Login from './Login'
 import NotFound from './NotFound'
 import Welcome from './Welcome'
 
-function MainContent(user, setUser) {
+function MainContent({user, setUser}) {
+    // console.log(user)
     return (
         <div>
             Main Content
             <Switch>
                 <Route exact path="/">
-                    <Home/>
+                    <Home user={user}/>
                 </Route>
                 <Route exact path="/signup">
                     <Signup setUser={setUser}/>

@@ -25,11 +25,14 @@ function PageContent() {
             })
           })
         .then(data => {
-            // console.log(data)
+            console.log("here")
+            console.log(data)
             setUser({id: data.id,
                 name: data.name,
                 username: data.username
             })
+            console.log("there")
+            console.log(user)
         })
     }, [])
 
