@@ -17,7 +17,7 @@ function MainContent(user, setUser) {
                     <Signup setUser={setUser}/>
                 </Route>
                 <Route exact path="/login">
-                    <Login setUser={setUser}/>
+                    <Login user={user} setUser={setUser}/>
                 </Route>
                 <Route exact path="/welcome">
                     {user ? <Welcome/> : <Redirect to="/"/>}

@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav'
 
 function NavBar( user, setUser ) {
     const history = useHistory()
+    console.log(user)
 
     function handleLogOut(){
         localStorage.removeItem("token")

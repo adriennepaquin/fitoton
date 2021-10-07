@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Alert from 'react-bootstrap/Alert'
 
-function Login({ setUser }) {
+function Login({ user, setUser }) {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const [errors, setErrors] = useState([])
@@ -46,6 +46,8 @@ function Login({ setUser }) {
             console.log("1")
             localStorage.setItem("token", token)
             console.log("2")
+            console.log(data)
+            console.log(user)
             setUser({
                 id: data.user.id,
                 name: data.user.name,
