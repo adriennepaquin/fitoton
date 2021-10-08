@@ -1,7 +1,8 @@
-function DisplayWorkout() {
+function DisplayWorkout({workout}) {
     return(
         <div>
             Each workout
+            {workout}
         </div>
     )
 }

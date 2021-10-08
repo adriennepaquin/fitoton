@@ -5,8 +5,8 @@ import Login from './Login'
 import NotFound from './NotFound'
 import Welcome from './Welcome'
 
-function MainContent({user, setUser}) {
-    // console.log(user)
+function MainContent({user, setUser, workouts}) {
+    console.log(user)
     return (
         <div>
             Main Content
@@ -21,7 +21,7 @@ function MainContent({user, setUser}) {
                     <Login user={user} setUser={setUser}/>
                 </Route>
                 <Route exact path="/welcome">
-                    {user ? <Welcome/> : <Redirect to="/"/>}
+                    {user ? <Welcome workouts={workouts}/> : <Redirect to="/"/>}
                 </Route>
                 <Route path="*" component={NotFound}/>
             </Switch>

@@ -1,5 +1,5 @@
 class WorkoutsController < ApplicationController
-    before_action :authenticate
+    # before_action :authenticate, only: [:show]
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
     # GET

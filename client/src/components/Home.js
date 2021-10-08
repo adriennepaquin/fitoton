@@ -1,10 +1,8 @@
-function Home({ user} ) {
-    // console.log(user.user.name)
+function Home() {
 
     return (
         <div>
             Welcome to Fit-oton!
-            {/* {user.name} */}
         </div>
     )
 }
