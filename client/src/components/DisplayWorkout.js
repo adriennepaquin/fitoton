@@ -1,8 +1,9 @@
 function DisplayWorkout({workout}) {
     return(
         <div>
-            Each workout
-            {workout}
+            {workout.name}
+            {workout.instructor}
+            {workout.length}
         </div>
     )
 }

@@ -38,6 +38,7 @@ function PageContent() {
         fetch(`http://localhost:3000/workouts`)
         .then(res => res.json())
         .then(data => {
+            console.log(data)
             setWorkouts(data)
         })
     }, [])

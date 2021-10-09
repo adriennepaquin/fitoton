@@ -21,7 +21,7 @@ function MainContent({user, setUser, workouts}) {
                     <Login user={user} setUser={setUser}/>
                 </Route>
                 <Route exact path="/welcome">
-                    {user ? <Welcome workouts={workouts}/> : <Redirect to="/"/>}
+                    <Welcome workouts={workouts}/>
                 </Route>
                 <Route path="*" component={NotFound}/>
             </Switch>
