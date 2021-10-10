@@ -1,10 +1,16 @@
+import Card from 'react-bootstrap/Card'
+
 function DisplayWorkout({workout}) {
     return(
-        <div>
-            {workout.name}
-            {workout.instructor}
-            {workout.length}
-        </div>
+        <Card>
+            <Card.Body>
+                <Card.Text>
+                    <p>{workout.category.name}</p>
+                    <p>{workout.name}</p>
+                    <p>with: {workout.instructor.name}</p>
+                </Card.Text>
+            </Card.Body>
+        </Card>
     )
 }
 

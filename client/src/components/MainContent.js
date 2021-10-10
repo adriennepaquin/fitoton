@@ -12,7 +12,7 @@ function MainContent({user, setUser, workouts}) {
             Main Content
             <Switch>
                 <Route exact path="/">
-                    <Home user={user}/>
+                    {user ? <Redirect to="/welcome"/> : <Home user={user}/>}
                 </Route>
                 <Route exact path="/signup">
                     <Signup setUser={setUser}/>
