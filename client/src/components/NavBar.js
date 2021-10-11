@@ -10,7 +10,7 @@ function NavBar( {user, setUser} ) {
     function handleLogOut(){
         localStorage.removeItem("token")
         setUser(null)
-        history.push('/login')
+        history.push('/')
     }
 
     return (

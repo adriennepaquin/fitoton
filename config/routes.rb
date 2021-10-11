@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :takens
-  resources :workouts
+  resources :workouts, only: [:index, :show]
   resources :instructors
   resources :categories
   resources :users
@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   post "/login", to: "users#login"
   post "/signup", to: "users#signup"
   get "/me", to: "users#me"
-  get "/workouts", to: "workouts#index"
+  # get "/workouts", to: "workouts#index"
 end

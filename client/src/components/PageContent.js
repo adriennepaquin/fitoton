@@ -7,6 +7,7 @@ import Footer from './Footer'
 function PageContent() {
     const [user, setUser] = useState(null)
     const [workouts, setWorkouts] = useState([])
+    const [myWorkouts, setMyWorkouts] = useState([])
 
     // fetch autologin
     useEffect(() => {
@@ -46,7 +47,7 @@ function PageContent() {
     return (
         <div>
             <NavBar user={user} setUser={setUser}/>
-            <MainContent user={user} setUser={setUser} workouts={workouts}/>
+            <MainContent user={user} setUser={setUser} workouts={workouts} myWorkouts={myWorkouts} setMyWorkouts={setMyWorkouts}/>
             <Footer/>
         </div>
     )

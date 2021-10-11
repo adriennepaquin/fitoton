@@ -10,8 +10,9 @@ class WorkoutsController < ApplicationController
 
     # GET /:id
     def show
-        workouts = Taken.where(user_id: params[:id])
-        if workouts
+        takens = Taken.where(user_id: params[:id])
+        if takens
+            workouts = takens.map{|taken| taken.workout}
             render json: workouts
         else
             render json: {error: "No auditions found"}

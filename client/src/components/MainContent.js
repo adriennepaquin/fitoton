@@ -5,7 +5,7 @@ import Login from './Login'
 import NotFound from './NotFound'
 import Welcome from './Welcome'
 
-function MainContent({user, setUser, workouts}) {
+function MainContent({user, setUser, workouts, myWorkouts, setMyWorkouts}) {
     console.log(user)
     return (
         <div>
@@ -21,7 +21,7 @@ function MainContent({user, setUser, workouts}) {
                     <Login user={user} setUser={setUser}/>
                 </Route>
                 <Route exact path="/welcome">
-                    <Welcome workouts={workouts}/>
+                    <Welcome user={user} workouts={workouts} myWorkouts={myWorkouts} setMyWorkouts={setMyWorkouts}/>
                 </Route>
                 <Route path="*" component={NotFound}/>
             </Switch>

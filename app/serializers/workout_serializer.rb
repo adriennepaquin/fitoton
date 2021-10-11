@@ -3,4 +3,6 @@ class WorkoutSerializer < ActiveModel::Serializer
 
   belongs_to :instructor
   belongs_to :category
+  has_many :takens
+  has_many :users, through: :takens
 end
