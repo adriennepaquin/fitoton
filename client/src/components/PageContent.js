@@ -5,9 +5,11 @@ import Footer from './Footer'
 
 
 function PageContent() {
+    const APIkey = 
     const [user, setUser] = useState(null)
     const [workouts, setWorkouts] = useState([])
     const [myWorkouts, setMyWorkouts] = useState([])
+    const [instructors, setInstructors] = useState({})
 
     // fetch autologin
     useEffect(() => {
@@ -43,6 +45,28 @@ function PageContent() {
             setWorkouts(data)
         })
     }, [])
+
+    // fetch instructor data & connect with API photos
+    useEffect(() => {
+        fetch(`http://localhost:3000/instructors`)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            fetch(`https://bing-image-search1.p.rapidapi.com/images/search?q=peloton%20${data.name}&count=1`, {
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "bing-image-search1.p.rapidapi.com",
+                    "x-rapidapi-key": APIkey
+                }
+            })
+            .then(response => {
+                console.log(response);
+            })
+            .catch(err => {
+                console.error(err);
+            });
+        })
+    })
 
     return (
         <div>

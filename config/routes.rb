@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :takens
   resources :workouts, only: [:index, :show]
-  resources :instructors
+  resources :instructors, only: [:index]
   resources :categories
   resources :users
   

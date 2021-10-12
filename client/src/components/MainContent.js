@@ -6,7 +6,7 @@ import NotFound from './NotFound'
 import Welcome from './Welcome'
 
 function MainContent({user, setUser, workouts, myWorkouts, setMyWorkouts}) {
-    console.log(user)
+    // console.log(user)
     return (
         <div>
             Main Content
