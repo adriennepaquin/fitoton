@@ -16,11 +16,11 @@ User.create!(name: "Paul", username: "papapaul", password: "password")
 
 puts "created #{User.count} users"
 
-Instructor.create!(name: "Cody", gender: "male")
-Instructor.create!(name: "Christine", gender: "female")
-Instructor.create!(name: "Alex", gender: "male")
-Instructor.create!(name: "Jess", gender: "female")
-Instructor.create!(name: "Anna", gender: "female")
+Instructor.create!(name: "Cody", gender: "male", photo_url: "https://blog.onepeloton.com/wp-content/uploads/2017/06/cody-rigsby-e1499979192251.jpg")
+Instructor.create!(name: "Christine", gender: "female", photo_url: "https://connectthewatts.com/wp-content/uploads/sites/11/2021/03/peloton-christine-dercole.jpg")
+Instructor.create!(name: "Alex", gender: "male", photo_url: "https://www.golfchannel.com/sites/default/files/2020/05/01/toussaint_1920_bike_hands.jpg")
+Instructor.create!(name: "Jess", gender: "female", photo_url: "https://blog.onepeloton.com/wp-content/uploads/2020/09/BB_TW.jpg")
+Instructor.create!(name: "Anna", gender: "female", photo_url: "https://peloton.shorthandstories.com/7-ways-meditation-can-help-ease-anxiety--according-to-our-members/assets/L5QSNDJKAl/anna_meditation-anxiety_header-2560x1440.jpeg")
 
 
 puts "created #{Instructor.count} instructors"
