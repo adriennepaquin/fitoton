@@ -7,18 +7,23 @@ function NavBar( {user, setUser} ) {
     const history = useHistory()
     // console.log(user)
 
+    function handleHome(){
+        {user ? history.push('/welcome') : history.push('/')}
+    }
+
     function handleLogOut(){
         localStorage.removeItem("token")
         setUser(null)
         history.push('/')
     }
 
+
     return (
         <Navbar sticky="top" id="styled-navbar" bg="light" expand="sm">
             <Container>
                 <Nav className="justify-content-start">
                     <Navbar.Brand>
-                        <div>
+                        <div onClick={handleHome}>
                             Fit-O-Ton
                         </div>
                     </Navbar.Brand>

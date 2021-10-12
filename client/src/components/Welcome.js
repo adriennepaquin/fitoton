@@ -30,7 +30,7 @@ function Welcome( {user, workouts, myWorkouts, setMyWorkouts} ) {
 
     return (
         <div>
-            You are logged in!
+            Welcome, {user.name} -- You are logged in!
             <div>
                 Explore new workouts:
                 {displayWorkout1 ? <DisplayWorkout workout={displayWorkout1}/> : null}
