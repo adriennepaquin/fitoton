@@ -5,16 +5,16 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Antic Slab', serif;
   }
   
   h2 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Staatliches', cursive;
     font-size: 35px;
   }
 
   h3 {
-      font-family: 'Lobster', cursive;
+    font-family: 'Staatliches', cursive;
       font-size: 25px;
   }
 
@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   #styled-navbar .links-left {
-    font-family: 'Lobster', cursive;
+    font-family: 'Staatliches', cursive;
     color: #03989e;
     border: 1px solid #03989e;
     padding: 10px;
@@ -52,7 +52,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #styled-navbar .links-right {
-    font-family: 'Lobster', cursive;
+    font-family: 'Staatliches', cursive;
     color: #03989e;
     border: 1px solid #03989e;
     padding: 10px;
@@ -73,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #styled-navbar .logged-in {
-    font-family: 'Lobster', cursive;
+    font-family: 'Staatliches', cursive;
     color: #03989e;
     padding: 10px;
     margin: 15px;
@@ -88,7 +88,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .button {
-    font-family: 'Lobster', cursive;
+    font-family: 'Staatliches', cursive;
     color: #03989e;
     padding: 10px;
     margin: 5px;
