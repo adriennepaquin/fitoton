@@ -110,6 +110,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 10px;
     border-radius: 5px;
   }
+
+  .in-image {
+    max-width: 20%;
+  }
 `
 
 function App() {

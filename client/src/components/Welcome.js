@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import DisplayWorkout from "./DisplayWorkout"
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 function Welcome( {user, workouts, myWorkouts, setMyWorkouts} ) {
 
@@ -29,21 +32,25 @@ function Welcome( {user, workouts, myWorkouts, setMyWorkouts} ) {
     const displayWorkout4 = workouts[workouts.length - 4]
 
     return (
-        <div>
-            Welcome, {user.name} -- You are logged in!
-            <div>
-                Explore new workouts:
-                {displayWorkout1 ? <DisplayWorkout workout={displayWorkout1}/> : null}
-                {displayWorkout2 ? <DisplayWorkout workout={displayWorkout2}/> : null}
-                {displayWorkout3 ? <DisplayWorkout workout={displayWorkout3}/> : null}
-                {displayWorkout4 ? <DisplayWorkout workout={displayWorkout4}/> : null}
-            </div>
-            <div>
-                Your recent workouts:
-                {displayMyWorkouts}
-            </div>
+        <Container>
+            <Row>
+                Welcome, {user.name} -- You are logged in!
+            </Row>
+            <Row>
+                <Col>
+                    Explore new workouts:
+                    {displayWorkout1 ? <DisplayWorkout workout={displayWorkout1}/> : null}
+                    {displayWorkout2 ? <DisplayWorkout workout={displayWorkout2}/> : null}
+                    {displayWorkout3 ? <DisplayWorkout workout={displayWorkout3}/> : null}
+                    {displayWorkout4 ? <DisplayWorkout workout={displayWorkout4}/> : null}
+                </Col>
+                <Col>
+                    Your recent workouts:
+                    {displayMyWorkouts}
+                </Col>
+            </Row>
             
-        </div>
+        </Container>
     )
 }
 

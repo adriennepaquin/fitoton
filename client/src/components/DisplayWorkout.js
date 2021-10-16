@@ -6,7 +6,7 @@ function DisplayWorkout({workout}) {
             <Card.Body>
                 <Card.Text>
                     <p>{workout.category.name}</p>
-                    <img src={workout.instructor.photo_url}/>
+                    <img className="in-image" src={workout.instructor.photo_url} />
                     <p>{workout.name}</p>
                     <p>with: {workout.instructor.name}</p>
                 </Card.Text>
