@@ -32,8 +32,8 @@ const GlobalStyle = createGlobalStyle`
   
   #styled-navbar .links-left {
     font-family: 'Staatliches', cursive;
-    color: #03989e;
-    border: 1px solid #03989e;
+    color: black;
+    border: 1px solid black;
     padding: 10px;
     margin: 15px;
     text-align: center;
@@ -43,18 +43,17 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     float: left;
     display: block;
-    border-radius: 5px;
 
     &:hover {
-      background-color: #03989e;
+      background-color: black;
       color: white;
     }
   }
 
   #styled-navbar .links-right {
     font-family: 'Staatliches', cursive;
-    color: #03989e;
-    border: 1px solid #03989e;
+    color: black;
+    border: 1px solid black;
     padding: 10px;
     margin: 15px;
     text-align: center;
@@ -64,17 +63,16 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     float: right;
     display: block;
-    border-radius: 5px;
 
     &:hover {
-      background-color: #03989e;
+      background-color: black;
       color: white;
     }
   }
 
   #styled-navbar .logged-in {
     font-family: 'Staatliches', cursive;
-    color: #03989e;
+    color: black;
     padding: 10px;
     margin: 15px;
     text-align: center;
@@ -89,18 +87,18 @@ const GlobalStyle = createGlobalStyle`
 
   .button {
     font-family: 'Staatliches', cursive;
-    color: #03989e;
+    color: black;
     padding: 10px;
+    border: 1px solid black;
     margin: 5px;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 5px;
 
     &:hover {
-      background-color: #03989e;
+      background-color: black;
       color: white;
     }
   }
@@ -108,7 +106,6 @@ const GlobalStyle = createGlobalStyle`
   #update {
     border: 3px solid #03989e;
     padding: 10px;
-    border-radius: 5px;
   }
 
   .in-image {
