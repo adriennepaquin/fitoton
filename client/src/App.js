@@ -112,7 +112,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .in-image {
-    max-width: 20%;
+    max-width: 40%;
   }
 `
 
