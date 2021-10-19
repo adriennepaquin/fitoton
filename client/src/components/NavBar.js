@@ -5,11 +5,6 @@ import Nav from 'react-bootstrap/Nav'
 
 function NavBar( {user, setUser} ) {
     const history = useHistory()
-    // console.log(user)
-
-    function handleHome(){
-        {user ? history.push('/welcome') : history.push('/')}
-    }
 
     function handleLogOut(){
         localStorage.removeItem("token")
@@ -19,19 +14,14 @@ function NavBar( {user, setUser} ) {
 
 
     return (
-        <Navbar sticky="top" id="styled-navbar" bg="light" expand="sm">
+        <Navbar sticky="top" id="styled-navbar" bg="black" expand="sm">
             <Container>
                 <Nav className="justify-content-start">
-                    <Navbar.Brand>
-                        <div onClick={handleHome}>
+                    <Navbar.Brand href="/">
+                        <div id="logo">
                             Fit-O-Ton
                         </div>
                     </Navbar.Brand>
-                    <Nav>
-                        <Nav.Item>
-                            {user ? <Nav.Link className="links-left" href="/">Home</Nav.Link> : null}
-                        </Nav.Item>
-                    </Nav>
                 </Nav>
                 <Nav>
                     <Nav className="justify-content-end">
@@ -42,7 +32,7 @@ function NavBar( {user, setUser} ) {
                         </>
                         :
                         <>
-                            <Navbar.Text className="logged-in">Logged in as: {user.username}</Navbar.Text>
+                            {/* <Navbar.Text className="logged-in">Logged in as: {user.username}</Navbar.Text> */}
                             <Nav.Link className="links-right" href="/" onClick={handleLogOut}>Log Out</Nav.Link>
                         </>
                         }

@@ -9,7 +9,6 @@ function MainContent({user, setUser, workouts, myWorkouts, setMyWorkouts}) {
     // console.log(user)
     return (
         <div>
-            Main Content
             <Switch>
                 <Route exact path="/">
                     {user ? <Redirect to="/welcome"/> : <Home user={user}/>}

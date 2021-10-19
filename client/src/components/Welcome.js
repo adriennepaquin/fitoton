@@ -34,7 +34,9 @@ function Welcome( {user, workouts, myWorkouts, setMyWorkouts} ) {
     return (
         <Container>
             <Row>
-                Welcome, {user.name} -- You are logged in!
+                <Col>
+                    Welcome, {user.name} -- You are logged in!
+                </Col>
             </Row>
             <Row>
                 <Col>

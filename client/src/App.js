@@ -24,16 +24,20 @@ const GlobalStyle = createGlobalStyle`
     height: 100px;
     background-color: black;
     border-bottom: 10px solid black;
+    position: sticky;
   }
 
   #logo {
     float: left;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
   }
   
   #styled-navbar .links-left {
     font-family: 'Staatliches', cursive;
-    color: black;
-    border: 1px solid black;
+    color: white;
+    border: 1px solid grey;
     padding: 10px;
     margin: 15px;
     text-align: center;
@@ -45,15 +49,15 @@ const GlobalStyle = createGlobalStyle`
     display: block;
 
     &:hover {
-      background-color: black;
-      color: white;
+      background-color: grey;
+      color: black;
     }
   }
 
   #styled-navbar .links-right {
     font-family: 'Staatliches', cursive;
-    color: black;
-    border: 1px solid black;
+    color: white;
+    border: 1px solid grey;
     padding: 10px;
     margin: 15px;
     text-align: center;
@@ -65,12 +69,12 @@ const GlobalStyle = createGlobalStyle`
     display: block;
 
     &:hover {
-      background-color: black;
-      color: white;
+      background-color: grey;
+      color: black;
     }
   }
 
-  #styled-navbar .logged-in {
+  /* #styled-navbar .logged-in {
     font-family: 'Staatliches', cursive;
     color: black;
     padding: 10px;
@@ -83,7 +87,7 @@ const GlobalStyle = createGlobalStyle`
     float: right;
     display: block;
     border-radius: 5px;
-  }
+  } */
 
   .button {
     font-family: 'Staatliches', cursive;
