@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 function DisplayWorkout({workout}) {
     return(
@@ -10,6 +11,7 @@ function DisplayWorkout({workout}) {
                     <p>{workout.name}</p>
                     <p>with: {workout.instructor.name}</p>
                 </Card.Text>
+                <Button variant="dark" href={workout.video_url}>Start Workout</Button>
             </Card.Body>
         </Card>
     )

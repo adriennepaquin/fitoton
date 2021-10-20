@@ -33,6 +33,7 @@ function NavBar( {user, setUser} ) {
                         :
                         <>
                             {/* <Navbar.Text className="logged-in">Logged in as: {user.username}</Navbar.Text> */}
+                            <Nav.Link className="links-right" href="/workouts">Workouts</Nav.Link>
                             <Nav.Link className="links-right" href="/" onClick={handleLogOut}>Log Out</Nav.Link>
                         </>
                         }
