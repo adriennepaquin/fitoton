@@ -91,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
 
   .button {
     font-family: 'Staatliches', cursive;
-    color: black;
+    color: white;
     padding: 10px;
     border: 1px solid black;
     margin: 5px;
@@ -102,8 +102,8 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
 
     &:hover {
-      background-color: black;
-      color: white;
+      background-color: white;
+      color: black;
     }
   }
 

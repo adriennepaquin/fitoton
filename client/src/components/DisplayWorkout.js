@@ -11,7 +11,7 @@ function DisplayWorkout({workout}) {
                     <p>{workout.name}</p>
                     <p>with: {workout.instructor.name}</p>
                 </Card.Text>
-                <Button variant="dark" href={workout.video_url}>Start Workout</Button>
+                <Button className="button" variant="dark" href={workout.video_url}>Start Workout</Button>
             </Card.Body>
         </Card>
     )
