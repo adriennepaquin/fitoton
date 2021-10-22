@@ -100,6 +100,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 25px;
     transition-duration: 0.4s;
     cursor: pointer;
+    border-radius: 0px;
 
     &:hover {
       background-color: white;
@@ -112,8 +113,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 10px;
   }
 
-  .in-image {
-    max-width: 40%;
+  .col {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 `
 

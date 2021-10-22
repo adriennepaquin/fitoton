@@ -9,7 +9,7 @@ const FootStyle = styled.div`
     background-color: black;
     color: white;
     text-align: center;
-    position: fixed;
+    position: sticky;
     left: 0;
     bottom: 0;
 `

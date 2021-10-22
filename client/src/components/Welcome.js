@@ -34,20 +34,26 @@ function Welcome( {user, workouts, myWorkouts, setMyWorkouts} ) {
     return (
         <Container>
             <Row>
-                <Col>
-                    Welcome, {user.name} -- You are logged in!
+                <Col className="col">
+                    <h2>
+                        Welcome to your dashboard, {user.name}
+                    </h2>
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    Explore new workouts:
+                <Col className="col">
+                    <h3>
+                        Explore new workouts:
+                    </h3>
                     {displayWorkout1 ? <DisplayWorkout workout={displayWorkout1}/> : null}
                     {displayWorkout2 ? <DisplayWorkout workout={displayWorkout2}/> : null}
                     {displayWorkout3 ? <DisplayWorkout workout={displayWorkout3}/> : null}
                     {displayWorkout4 ? <DisplayWorkout workout={displayWorkout4}/> : null}
                 </Col>
-                <Col>
-                    Your recent workouts:
+                <Col className="col">
+                    <h3>
+                        Your recent workouts:
+                    </h3>
                     {displayMyWorkouts}
                 </Col>
             </Row>
