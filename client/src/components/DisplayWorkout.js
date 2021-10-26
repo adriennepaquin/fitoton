@@ -7,6 +7,8 @@ const CardStyle = styled.div`
         display: block;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
+        height: auto;
     }
 
     button {

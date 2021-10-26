@@ -24,7 +24,8 @@ function MainContent({user, setUser, workouts, myWorkouts, setMyWorkouts}) {
                     {user ? <Welcome user={user} workouts={workouts} myWorkouts={myWorkouts} setMyWorkouts={setMyWorkouts}/> : <Redirect to="/"/>}
                 </Route>
                 <Route exact path="/workouts">
-                    {user ? <Workouts/> : <Redirect to="/"/>}
+                    {/* {user ? <Workouts user={user} workouts={workouts}/> : <Redirect to="/"/>} */}
+                    <Workouts user={user} workouts={workouts}/>
                 </Route>
                 <Route path="*" component={NotFound}/>
             </Switch>

@@ -23,7 +23,7 @@ function Welcome( {user, workouts, myWorkouts, setMyWorkouts} ) {
     }, [])
 
     const displayMyWorkouts = myWorkouts.map(myWork => {
-        return <DisplayWorkout key={myWork.id} workout={myWork}/>
+        return <DisplayWorkout key={myWork.name} workout={myWork}/>
     })
 
     const displayWorkout1 = workouts[workouts.length - 1]

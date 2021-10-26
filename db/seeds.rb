@@ -38,19 +38,33 @@ Workout.create!(name: "30 min Alicia Keys Full Body Strength", length: 30, video
 Workout.create!(name: "45 min Power Zone Endurance Ride", length: 45, video_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category_id: 2, instructor_id: 2)
 Workout.create!(name: "10 min Bodyweight Strength", length: 10, video_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category_id: 1, instructor_id: 4)
 Workout.create!(name: "10 min Arms & Light Weights", length: 10, video_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category_id: 1, instructor_id: 3)
+Workout.create!(name: "30 min Hip Hop Ride", length: 30, video_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category_id: 2, instructor_id: 3)
+Workout.create!(name: "20 min 80s Rock Ride", length: 20, video_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category_id: 2, instructor_id: 2)
+Workout.create!(name: "30 min Intervals & Arms Ride", length: 30, video_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category_id: 2, instructor_id: 1)
+Workout.create!(name: "10 min Gratitude Meditation", length: 10, video_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category_id: 4, instructor_id: 5)
+Workout.create!(name: "5 min Peace Meditation", length: 5, video_url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", category_id: 4, instructor_id: 1)
+
 
 puts "created #{Workout.count} workouts"
 
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
-Taken.create!(user_id: rand(1..3), workout_id: rand(1..6))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+Taken.create!(user_id: rand(1..3), workout_id: rand(1..11))
+
 
 puts "created #{Taken.count} takens"
 
