@@ -13,7 +13,7 @@ function Workouts( {user, workouts} ) {
     return (
         <Container>
             <Row>
-                <h2>Workouts</h2>
+                <h2>All Workouts</h2>
             </Row>
             <Row xs={1} md={2} className="g-4">
                 {displayWorkouts}

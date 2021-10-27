@@ -21,10 +21,6 @@ const CardStyle = styled.div`
 
 function DisplayWorkout({workout}) {
 
-    function handleClick() {
-        console.log("click")
-    }
-
     return(
         <CardStyle>
             {/* <Card style={{ width: '18rem' }}> */}
@@ -38,7 +34,7 @@ function DisplayWorkout({workout}) {
                         <p>{workout.name}</p>
                         <p>with: {workout.instructor.name}</p>
                     </Card.Text>
-                    <Button onClick={handleClick} className="button" variant="dark" href={workout.video_url} target="_blank">Play Workout</Button>
+                    <Button className="button" variant="dark" href={workout.video_url} target="_blank">Play Workout</Button>
                 </Card.Body>
             </Card>
         </CardStyle>
