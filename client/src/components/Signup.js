@@ -55,7 +55,6 @@ function Signup({setUser}) {
     }
     return (
         <div>
-            Sign Up
             <Container className="sign-container">
             <Row>
                 <Col>

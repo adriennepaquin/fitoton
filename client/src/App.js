@@ -7,7 +7,20 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Antic Slab', serif;
   }
-  
+
+  img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+
+  h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 55px;
+  }
+
   h2 {
     font-family: 'Staatliches', cursive;
     font-size: 35px;
@@ -92,6 +105,7 @@ const GlobalStyle = createGlobalStyle`
   .button {
     font-family: 'Staatliches', cursive;
     color: white;
+    background-color: black;
     padding: 10px;
     border: 1px solid black;
     margin: 5px;
@@ -105,6 +119,7 @@ const GlobalStyle = createGlobalStyle`
     &:hover {
       background-color: white;
       color: black;
+      border: 1px solid black;
     }
   }
 

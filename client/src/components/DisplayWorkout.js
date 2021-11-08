@@ -3,13 +3,6 @@ import Button from 'react-bootstrap/Button'
 import styled from 'styled-components'
 
 const CardStyle = styled.div`
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        height: auto;
-    }
 
     button {
         display: block;
@@ -25,7 +18,7 @@ function DisplayWorkout({workout}) {
         <CardStyle>
             {/* <Card style={{ width: '18rem' }}> */}
             <Card>
-                <Card.Img className="in-image" variant="top" src={workout.instructor.photo_url} />
+                <Card.Img variant="top" src={workout.instructor.photo_url} />
                 <Card.Body>
                     <Card.Title>
                         <h2>{workout.category.name}</h2>

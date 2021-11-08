@@ -58,7 +58,6 @@ function Login({ user, setUser }) {
 
     return (
         <div>
-            Log In
             <Container className="log-container">
                 <Row>
                     <Col>
